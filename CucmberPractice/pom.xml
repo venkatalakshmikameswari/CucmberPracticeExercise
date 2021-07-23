@@ -3,4 +3,19 @@
   <groupId>com.kameswari</groupId>
   <artifactId>CucmberPractice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>5.6.0</version>
+		</dependency>
+ 
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>5.6.0</version>
+		</dependency>
+	</dependencies>
 </project>
