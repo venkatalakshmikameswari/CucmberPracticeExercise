@@ -41,4 +41,27 @@ String expectedtitle="text - Google Search";
 		Assert.assertEquals(actualtitle,expectedtitle);
 	   System.out.println("validate the search text field.");
 	}
+
+	@Given("a web browser is on the Google page")
+	public void a_web_browser_is_on_the_Google_page() {
+		driver = BrowserHelper.startBrowser("chrome","https://www.google.com");
+		System.out.println("web browser is on the Google page");
+	}
+
+	@When("the search phrase {string} is entered")
+	public void the_search_phrase_is_entered(String input) {
+		String str=String.format("%1$s",input);
+		WebElement element=driver.findElement(By.name("q"));
+		 element.sendKeys(input);
+		 element.submit();
+      System.out.println("Entered the text in search");
+	}
+
+	@Then("results for {string} are shown")
+	public void results_for_are_shown(String string) {
+	    
+	}
+
+
+
 }
