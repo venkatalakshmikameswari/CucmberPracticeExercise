@@ -1,3 +1,4 @@
+@GoogleSearch
 Feature:Google Search
 
 Scenario: Validate google search text field
